@@ -4,11 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/4a256f10f3.js" crossorigin="anonymous"></script>
+  <title>Fulbo</title>
 </head>
 
 <body>
+  <!-- ⋆⭒˚.⋆ HEADER ⋆⭒˚.⋆ -->
+  <header>
+    <nav>
+      <div>
+        <h1>Fulbo</h1>
+        <img src="./assets/icon.png" alt="ball-icon">
+      </div>
+      <div>
+        <button>
+          <img src="./assets/ball.png" alt="ball">
+          <span>Modo oscuro</span>
+        </button>
+        <button>
+          <img src="./assets/ball.png" alt="ball">
+          <span>Modo claro</span>
+        </button>
+      </div>
+      <div>
+        <button>
+          <img src="./assets/ball-btn.png" alt="ball-btn">
+          <span>Agregar jugador</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
+  <!-- ⋆⭒˚.⋆ MAIN ⋆⭒˚.⋆ -->
+  <main>
+    <section>
+      <form class="club-form">
+        <select name="clubes" id="clubes">
+          <option value="">Seleccione un club</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Real Madrid">Real Madrid</option>
+          <option value="Manchester City">Manchester City</option>
+          <option value="Manchester United">Manchester United</option>
+          <option value="Atletico de Madrid">Atlético de Madrid</option>
+          <option value="Aston Villa">Aston Villa</option>
+        </select>
+
+        <select name="posiciones" id="posiciones">
+          <option value="">Seleccione una posición</option>
+          <option value="Delanteros">Delanteros</option>
+          <option value="Centrocampistas">Centrocampistas</option>
+          <option value="Defensores">Defensores</option>
+          <option value="Porteros">Porteros</option>
+        </select>
+
+        <div>
+          <button>
+            <span><i class="fa-solid fa-magnifying-glass"></i>Buscar</span>
+          </button>
+          <button>
+            <span><i class="fa-solid fa-arrows-rotate"></i>Limpiar</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <div class="contenedor-de-carga">
+      <img src="./assets/ball.gif" alt="ball-gif">
+    </div>
+
+    <section>
+      <div class="tarjetas"></div>
+    </section>
+  </main>
+
+  <!-- ⋆⭒˚.⋆ FOOTER ⋆⭒˚.⋆ -->
+  <footer>
+    <p>© Malena Gerez Diaz 2024</p>
+    <ul class="redes">
+      <li><a href=""><i class="fa-brands fa-linkedin"></a></i></li>
+      <li><a href=""><i class="fa-brands fa-github-alt"></a></i></li>
+      <li><a href=""><i class="fa-solid fa-envelope"></a></i></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
