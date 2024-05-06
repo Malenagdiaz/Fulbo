@@ -1,0 +1,39 @@
+.club-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-block: 25px;
+}
+
+select#clubes {
+  background-color: $dark-blue-color;
+  border: 2px solid $dark-blue-color;
+  color: $default-color;
+  padding: 8px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  width: 200px;
+  border-radius: 5px;
+}
+
+select#clubes option {
+  background-color: $dark-blue-color;
+  color: $default-color;
+}
+
+select#positiones {
+  background-color: $dark-blue-color;
+  border: 2px solid $dark-blue-color;
+  color: $default-color;
+  padding: 8px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  width: 200px;
+  border-radius: 5px;
+}
+
+select#positiones option {
+  background-color: $dark-blue-color;
+  color: $default-color;
+}

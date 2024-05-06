@@ -11,3 +11,16 @@ body {
   justify-content: space-between;
   min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $black-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark-blue-color;
+  border-radius: 6px;
+}

@@ -1,0 +1,41 @@
+.tarjeta img {
+  width: 85%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  margin: 0 35px;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tarjetas div {
+  display: flex;
+  width: calc(25% - 20px);
+  height: 350px;
+  border: 3px solid #010b25;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.5s ease;
+  padding: 10px 0px;
+}
+
+.tarjetas div:hover {
+  transform: scale(1.05);
+}
+
+#jugador-nombre {
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
