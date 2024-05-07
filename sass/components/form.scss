@@ -22,7 +22,7 @@ select#clubes option {
   color: $default-color;
 }
 
-select#positiones {
+select#position {
   background-color: $dark-blue-color;
   border: 2px solid $dark-blue-color;
   color: $default-color;
@@ -33,7 +33,7 @@ select#positiones {
   border-radius: 5px;
 }
 
-select#positiones option {
+select#position option {
   background-color: $dark-blue-color;
   color: $default-color;
 }

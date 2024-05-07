@@ -78,7 +78,7 @@ button {
 }
 
 button span {
-  font-size: 0.938rem;
+  font-size: 0.813rem;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
@@ -88,7 +88,11 @@ button img {
   width: 20%;
 }
 
-.modo-oscuro {
+.modo-oscuro.hidden {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
@@ -236,7 +240,7 @@ select#clubes option {
   color: #ffffff;
 }
 
-select#positiones {
+select#position {
   background-color: #010b25;
   border: 2px solid #010b25;
   color: #ffffff;
@@ -247,7 +251,7 @@ select#positiones {
   border-radius: 5px;
 }
 
-select#positiones option {
+select#position option {
   background-color: #010b25;
   color: #ffffff;
 }
@@ -264,7 +268,7 @@ select#positiones option {
 
 .tarjeta img {
   width: 85%;
-  height: 65%;
+  height: 75%;
   object-fit: cover;
 }
 
@@ -281,9 +285,10 @@ select#positiones option {
 }
 
 .tarjetas div {
+  background-color: #010b25;
   display: flex;
   width: calc(25% - 20px);
-  height: 350px;
+  height: 400px;
   border: 3px solid #010b25;
   border-radius: 5px;
   margin-bottom: 20px;
