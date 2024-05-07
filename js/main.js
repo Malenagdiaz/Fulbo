@@ -1,3 +1,4 @@
+// ⋆⭒˚.⋆ Modo oscuro y Modo claro ⋆⭒˚.⋆
 document.querySelector(".modo-oscuro").classList.add("hidden");
 
 document.querySelector(".modo-oscuro").addEventListener("click", () => {
