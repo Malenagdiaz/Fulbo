@@ -5,6 +5,7 @@
 }
 
 button {
+  font-family: "Montserrat", sans-serif;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -127,6 +128,7 @@ ul li i {
   background-color: $dark-blue-color;
   color: $default-color;
   overflow: hidden;
+  margin-top: 10px;
   box-shadow: 0 0 15px $blue-color, 0 0 15px $blue-color;
 }
 
@@ -151,4 +153,119 @@ ul li i {
   z-index: 10;
   transform: scale(1.1);
   transition: 1.1s;
+}
+
+.boton-regresar {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 0.938rem;
+  color: $blue-color;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.boton-regresar i {
+  margin-right: 5px;
+}
+
+.boton-regresar::after {
+  content: "";
+  position: absolute;
+  background-color: $blue-color;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s;
+}
+
+.boton-regresar.modo-oscuro::after {
+  background-color: $dark-blue-color;
+}
+
+.boton-regresar:hover::after {
+  width: 100%;
+}
+
+.btn-editar-borrar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+#btn-borrar i,
+#btn-editar i {
+  margin-right: 3px;
+}
+
+#btn-borrar,
+#btn-editar {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+#btn-borrar::after,
+#btn-editar::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $blue-color;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+#btn-borrar::before,
+#btn-editar::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #0404e2,
+    #6565ff,
+    #98c3ed,
+    #318ce7,
+    #00ffd5,
+    #002bff,
+    #000020,
+    #014ba0
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+#btn-borrar:active,
+#btn-editar:active {
+  color: $default-color;
+  font-weight: bolder;
 }
