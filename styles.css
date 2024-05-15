@@ -62,7 +62,6 @@ p {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  margin-top: 25px;
 }
 
 .botones {
@@ -441,6 +440,7 @@ h2.titulo-adv {
   border: 2px solid #010b25;
   border-radius: 10px;
   padding: 20px 15px;
+  margin-bottom: 25px;
 }
 
 .info-jugador {
