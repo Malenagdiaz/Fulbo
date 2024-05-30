@@ -269,3 +269,25 @@ ul li i {
   color: $default-color;
   font-weight: bolder;
 }
+
+.btn-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-agregarJ,
+.btn-cancelarJ {
+  background: transparent;
+  border: 2px solid $blue-color;
+  color: $default-color;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px $blue-color;
+}
+
+.btn-agregarJ:hover,
+.btn-cancelarJ:hover {
+  background-color: $blue-color;
+  box-shadow: 0 0 5px $blue-color, 0 0 15px $blue-color, 0 0 25px $blue-color;
+}

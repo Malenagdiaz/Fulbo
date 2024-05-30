@@ -322,6 +322,28 @@ ul li i {
   font-weight: bolder;
 }
 
+.btn-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-agregarJ,
+.btn-cancelarJ {
+  background: transparent;
+  border: 2px solid #171a4a;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #171a4a;
+}
+
+.btn-agregarJ:hover,
+.btn-cancelarJ:hover {
+  background-color: #171a4a;
+  box-shadow: 0 0 5px #171a4a, 0 0 15px #171a4a, 0 0 25px #171a4a;
+}
+
 .club-form {
   display: flex;
   justify-content: center;
@@ -330,7 +352,7 @@ ul li i {
   margin-block: 25px;
 }
 
-select#clubes {
+select#club {
   background-color: #010b25;
   border: 2px solid #010b25;
   color: #ffffff;
@@ -341,7 +363,7 @@ select#clubes {
   border-radius: 5px;
 }
 
-select#clubes option {
+select#club option {
   background-color: #010b25;
   color: #ffffff;
 }
@@ -502,6 +524,54 @@ h2.titulo-adv {
   border: 3px solid #171a4a;
   border-radius: 5px;
   padding: 2px 2px;
+}
+
+#formulario-jugador {
+  background-color: #010b25;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 550px;
+  height: 550px;
+  margin-block: 15px;
+  padding: 15px 20px;
+  margin-block: 15px;
+  border-radius: 15px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 0.938rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+input {
+  padding: 5px;
+}
+
+textarea {
+  height: 100px;
+  padding: 5px;
+}
+
+#positions {
+  background-color: #171a4a;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+}
+
+#clubes {
+  background-color: #171a4a;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

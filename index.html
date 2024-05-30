@@ -38,9 +38,9 @@
 
   <!-- ⋆⭒˚.⋆ MAIN ⋆⭒˚.⋆ -->
   <main>
-    <section>
+    <section class="buscador">
       <form class="club-form">
-        <select name="clubes" id="clubes">
+        <select name="club" id="club">
           <option value="">Seleccione un club</option>
           <option value="Barcelona">Barcelona</option>
           <option value="Real Madrid">Real Madrid</option>
@@ -52,10 +52,10 @@
 
         <select name="position" id="position">
           <option value="">Seleccione una posición</option>
-          <option value="Delanteros">Delantero</option>
-          <option value="Centrocampistas">Centrocampista</option>
-          <option value="Defensores">Defensor</option>
-          <option value="Porteros">Portero</option>
+          <option value="Delantero">Delantero</option>
+          <option value="Centrocampista">Centrocampista</option>
+          <option value="Defensor">Defensor</option>
+          <option value="Portero">Portero</option>
         </select>
 
         <div class="btn-form">
@@ -76,6 +76,10 @@
     <section class="contenedor-tarjetas">
       <div class="tarjetas"></div>
     </section>
+
+    <!-- ⋆⭒˚.⋆ Ventana modal para el post ⋆⭒˚.⋆ -->
+    <div id="modal"></div>
+
   </main>
 
   <!-- ⋆⭒˚.⋆ FOOTER ⋆⭒˚.⋆ -->
@@ -91,5 +95,7 @@
 </body>
 <script src="./js/main.js"></script>
 <script src="./js/get.js"></script>
+<script src="./js/post.js"></script>
+<script src="./js/search.js"></script>
 
 </html>
