@@ -77,14 +77,6 @@ const guardarInfoJugador = () => {
     actualizarListaClubes(nuevoClub);
   }
 
-  console.log({
-    name: document.getElementById("input-nombre").value,
-    imageUrl: document.getElementById("input-url").value,
-    description: document.getElementById("detalle").value,
-    club: nuevoClub || clubSeleccionado,
-    position: positionSeleccionada,
-  });
-
   return {
     name: document.getElementById("input-nombre").value,
     imageUrl: document.getElementById("input-url").value,
@@ -115,10 +107,10 @@ const enviarNuevoJugador = (nuevoJugador) => {
 
 const actualizarListaClubes = (nuevoClub) => {
   const defaultClub = document.querySelector(
-    `#club option[value="${nuevoClub}"]`
+    `#clubes option[value="${nuevoClub}"]`
   );
   if (!defaultClub && nuevoClub) {
-    const selectClub = document.getElementById("club");
+    const selectClub = document.getElementById("clubes");
     const option = document.createElement("option");
     option.value = nuevoClub;
     option.text = nuevoClub;
