@@ -1,3 +1,4 @@
+// ⋆⭒˚.⋆ Edita a los jugadores ⋆⭒˚.⋆
 const contenedorEdit = document.querySelector(".contenedor-edit");
 
 const mostrarEditor = (jugador) => {
@@ -40,11 +41,9 @@ const mostrarEditor = (jugador) => {
       </div>
   `;
 
-  // Asignamos el valor del select de posición
   const selectPosition = document.getElementById("edit-position");
   selectPosition.value = jugador.position;
 
-  // Asignamos el valor del select de club
   const selectClub = document.getElementById("edit-club");
   selectClub.value = jugador.club;
 
