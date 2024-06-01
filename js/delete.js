@@ -1,3 +1,5 @@
+// ⋆⭒˚.⋆ Elimina a los jugadores ⋆⭒˚.⋆
+
 const contenedorModal = document.getElementById("contenedor-modal");
 
 const abrirModal = (idJugador) => {
