@@ -328,6 +328,8 @@ ul li i {
   gap: 20px;
 }
 
+#aceptar-modal,
+#cancelar-modal,
 .btn-agregarJ,
 .btn-cancelarJ {
   background: transparent;
@@ -338,10 +340,19 @@ ul li i {
   box-shadow: 0 0 10px #171a4a;
 }
 
+#aceptar-modal:hover,
+#cancelar-modal:hover,
 .btn-agregarJ:hover,
 .btn-cancelarJ:hover {
   background-color: #171a4a;
   box-shadow: 0 0 5px #171a4a, 0 0 15px #171a4a, 0 0 25px #171a4a;
+}
+
+.btns-modal {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
 }
 
 .club-form {
@@ -462,7 +473,7 @@ h2.titulo-adv {
   border: 2px solid #010b25;
   border-radius: 10px;
   padding: 20px 15px;
-  margin-bottom: 25px;
+  margin-block: 25px;
 }
 
 .info-jugador {
@@ -572,6 +583,47 @@ textarea {
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
+}
+
+#modal {
+  background-color: #010b25;
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 50%);
+  width: 400px;
+  height: 300px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.cubierta-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.titulo-advertencia {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+}
+
+#icon-alert {
+  margin: auto 150px;
+  width: 70px;
+}
+
+.mensaje-advertencia {
+  margin-top: 20px;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

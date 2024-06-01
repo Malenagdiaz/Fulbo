@@ -78,8 +78,9 @@ const obtenerDetallesJugador = (idJugador) => {
 
 // ⋆⭒˚.⋆ Renderiza los detalles del jugador ⋆⭒˚.⋆
 const renderizarDetallesJugador = (jugador) => {
-  const { imageUrl, name, club, position, description } = jugador;
+  const { imageUrl, name, club, position, description, id } = jugador;
 
+  buscador.style.display = "none";
   tarjeta.innerHTML = `
   <div class="detalles-jugador">
     <button class="boton-regresar"><i class="fa-solid fa-arrow-left"></i>Regresar atrás</button>
@@ -104,7 +105,7 @@ const renderizarDetallesJugador = (jugador) => {
         </div>
     </div>
     <div class="btn-editar-borrar">
-        <button id="btn-borrar"><i class="fa-solid fa-trash"></i>Borrar</button>
+        <button id="btn-borrar" data-cardid="${id}"><i class="fa-solid fa-trash"></i>Borrar</button>
         <button id="btn-editar"><i class="fa-solid fa-pen-to-square"></i>Editar</button>
     </div>
 </div>
@@ -112,6 +113,13 @@ const renderizarDetallesJugador = (jugador) => {
 
   const regresarBtn = document.querySelector(".boton-regresar");
   regresarBtn.addEventListener("click", () => {
+    buscador.style.display = "block";
     obtenerJugadores(api);
+  });
+
+  const borrarBtn = document.getElementById("btn-borrar");
+  borrarBtn.addEventListener("click", (e) => {
+    const idJugador = e.currentTarget.dataset.cardid;
+    abrirModal(idJugador);
   });
 };

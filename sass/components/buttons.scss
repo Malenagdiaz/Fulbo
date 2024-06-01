@@ -276,6 +276,8 @@ ul li i {
   gap: 20px;
 }
 
+#aceptar-modal,
+#cancelar-modal,
 .btn-agregarJ,
 .btn-cancelarJ {
   background: transparent;
@@ -286,8 +288,17 @@ ul li i {
   box-shadow: 0 0 10px $blue-color;
 }
 
+#aceptar-modal:hover,
+#cancelar-modal:hover,
 .btn-agregarJ:hover,
 .btn-cancelarJ:hover {
   background-color: $blue-color;
   box-shadow: 0 0 5px $blue-color, 0 0 15px $blue-color, 0 0 25px $blue-color;
+}
+
+.btns-modal {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
 }
