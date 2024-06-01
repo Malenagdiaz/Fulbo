@@ -87,7 +87,6 @@ const guardarCambios = (idJugador, nuevoJugador) => {
       if (res.ok) {
         return res.json();
       }
-      throw new Error("Error al actualizar el jugador");
     })
     .then(() => {
       obtenerDetallesJugador(idJugador);
