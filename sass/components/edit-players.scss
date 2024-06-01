@@ -1,0 +1,45 @@
+.contenedor-edit {
+  display: flex;
+  justify-content: center;
+  margin: 0 35px;
+}
+
+#editor {
+  background-color: $dark-blue-color;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.titulo-edit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  color: $default-color;
+  text-align: center;
+}
+
+#edit-imgUrl,
+#edit-name,
+#edit-position,
+#edit-club,
+#edit-description {
+  font-size: 0.938rem;
+}
+
+.label-edit {
+  font-size: 1.125rem;
+}
+
+.select-edit {
+  background-color: $blue-color;
+  color: $default-color;
+  border: none;
+  padding: 10px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+}

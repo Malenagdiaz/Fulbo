@@ -19,24 +19,17 @@ label {
 
 input {
   padding: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea {
   height: 100px;
   padding: 5px;
-}
-
-#positions {
-  background-color: $blue-color;
-  color: $default-color;
-  border: none;
-  padding: 5px;
-  font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
-  border-radius: 5px;
 }
 
-#clubes {
+#clubes,
+#positions {
   background-color: $blue-color;
   color: $default-color;
   border: none;

@@ -122,4 +122,9 @@ const renderizarDetallesJugador = (jugador) => {
     const idJugador = e.currentTarget.dataset.cardid;
     abrirModal(idJugador);
   });
+
+  const editarBtn = document.getElementById("btn-editar");
+  editarBtn.addEventListener("click", () => {
+    mostrarEditor(jugador);
+  });
 };

@@ -328,6 +328,8 @@ ul li i {
   gap: 20px;
 }
 
+#btn-guardar-edit,
+#btn-cancelar-edit,
 #aceptar-modal,
 #cancelar-modal,
 .btn-agregarJ,
@@ -340,6 +342,8 @@ ul li i {
   box-shadow: 0 0 10px #171a4a;
 }
 
+#btn-guardar-edit:hover,
+#btn-cancelar-edit:hover,
 #aceptar-modal:hover,
 #cancelar-modal:hover,
 .btn-agregarJ:hover,
@@ -353,6 +357,12 @@ ul li i {
   justify-content: center;
   margin-top: 20px;
   gap: 40px;
+}
+
+.btn-edit {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .club-form {
@@ -468,8 +478,7 @@ h2.titulo-adv {
 
 .detalles-jugador {
   background-color: #010b25;
-  width: 950px;
-  height: 485px;
+  width: 70%;
   border: 2px solid #010b25;
   border-radius: 10px;
   padding: 20px 15px;
@@ -558,24 +567,17 @@ label {
 
 input {
   padding: 5px;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea {
   height: 100px;
   padding: 5px;
-}
-
-#positions {
-  background-color: #171a4a;
-  color: #ffffff;
-  border: none;
-  padding: 5px;
-  font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
-  border-radius: 5px;
 }
 
-#clubes {
+#clubes,
+#positions {
   background-color: #171a4a;
   color: #ffffff;
   border: none;
@@ -624,6 +626,52 @@ textarea {
 .mensaje-advertencia {
   margin-top: 20px;
   font-size: 1.2rem;
+}
+
+.contenedor-edit {
+  display: flex;
+  justify-content: center;
+  margin: 0 35px;
+}
+
+#editor {
+  background-color: #010b25;
+  padding: 20px;
+  width: 70%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.titulo-edit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+#edit-imgUrl,
+#edit-name,
+#edit-position,
+#edit-club,
+#edit-description {
+  font-size: 0.938rem;
+}
+
+.label-edit {
+  font-size: 1.125rem;
+}
+
+.select-edit {
+  background-color: #171a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
