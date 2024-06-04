@@ -17,12 +17,15 @@ const abrirModal = (idJugador) => {
 
   const cubiertaModal = document.querySelector(".cubierta-modal");
   const btnCancelar = document.getElementById("cancelar-modal");
+  const btnAceptar = document.getElementById("aceptar-modal");
+
+  contenedorModal.style.display = "block";
+  cubiertaModal.style.display = "block";
+
   btnCancelar.addEventListener("click", () => {
-    contenedorModal.style.display = "none";
-    cubiertaModal.style.display = "none";
+    contenedorModal.innerHTML = "";
   });
 
-  const btnAceptar = document.getElementById("aceptar-modal");
   btnAceptar.addEventListener("click", () => {
     fetch(
       `https://663e8b86e1913c476797f698.mockapi.io/api/fulbo/${idJugador}`,
@@ -33,9 +36,7 @@ const abrirModal = (idJugador) => {
       .then((res) =>
         res.json().then((data) => {
           obtenerJugadores(api);
-          contenedorModal.style.display = "none";
-          cubiertaModal.style.display = "none";
-          buscador.style.display = "block";
+          contenedorModal.innerHTML = "";
         })
       )
       .catch((error) => console.log(error));
