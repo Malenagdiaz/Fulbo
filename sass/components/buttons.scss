@@ -1,6 +1,4 @@
-.botones {
-  display: flex;
-  gap: 20px;
+.boton-jugador {
   margin-right: 20px;
 }
 
@@ -23,26 +21,14 @@ button img {
   width: 20%;
 }
 
-.modo-oscuro.hidden {
-  display: none;
-}
-
-.hidden {
-  display: none;
-}
-
-.modo-oscuro,
-.modo-claro,
 .agrega-jugador {
   background-color: $blue-color;
   border: 1px solid $blue-color;
   border-radius: 20px;
-  padding: 2px 6px;
+  padding: 0 6px;
   box-shadow: 0 0 5px $blue-color, 0 0 25px $blue-color;
 }
 
-.modo-oscuro:hover,
-.modo-claro:hover,
 .agrega-jugador:hover {
   box-shadow: 0 0 25px $blue-color, 0 0 50px $blue-color, 0 0 100px $blue-color,
     0 0 200px $blue-color;
