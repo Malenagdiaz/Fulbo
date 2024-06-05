@@ -4,11 +4,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="assets/favicon.jpg" type="imageUrl/x-icon">
+  <script src="https://kit.fontawesome.com/4a256f10f3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Fulbo</title>
 </head>
 
 <body>
+  <!-- ⋆⭒˚.⋆ HEADER ⋆⭒˚.⋆ -->
+  <header>
+    <nav>
+      <div class="titulo-contenedor">
+        <h1>Fulbo</h1>
+        <img src="./assets/icon.png" alt="ball-icon" class="icon">
+        <p id="historia-futbol">Cada jugada es una historia y cada historia un legado</p>
+      </div>
+      <div class="boton-jugador">
+        <button class="agrega-jugador">
+          <img src="./assets/ball-btn.png" alt="ball-btn">
+          <span>Agregar jugador</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
+  <!-- ⋆⭒˚.⋆ MAIN ⋆⭒˚.⋆ -->
+  <main>
+    <section class="buscador">
+      <form class="club-form">
+        <select name="club" id="club">
+          <option value="">Seleccione un club</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Real Madrid">Real Madrid</option>
+          <option value="Manchester City">Manchester City</option>
+          <option value="Manchester United">Manchester United</option>
+          <option value="Atletico de Madrid">Atlético de Madrid</option>
+          <option value="Aston Villa">Aston Villa</option>
+        </select>
+
+        <select name="position" id="position">
+          <option value="">Seleccione una posición</option>
+          <option value="Delantero">Delantero</option>
+          <option value="Centrocampista">Centrocampista</option>
+          <option value="Defensor">Defensor</option>
+          <option value="Portero">Portero</option>
+        </select>
+
+        <div class="btn-form">
+          <button class="buscar-btn">
+            <span><i class="fa-solid fa-magnifying-glass"></i>Buscar</span>
+          </button>
+          <button class="limpiar-btn">
+            <span><i class="fa-solid fa-arrows-rotate"></i>Limpiar</span>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <div class="contenedor-de-carga">
+      <img src="./assets/spinner.gif" alt="spinner" id="spinner">
+    </div>
+
+    <section class="contenedor-tarjetas">
+      <div class="tarjetas"></div>
+    </section>
+
+    <!-- ⋆⭒˚.⋆ Ventana modal para el post ⋆⭒˚.⋆ -->
+    <div id="contenedor-modal"></div>
+
+    <!-- ⋆⭒˚.⋆ Contenedor para editar ⋆⭒˚.⋆ -->
+    <div class="contenedor-edit"></div>
+
+  </main>
+
+  <!-- ⋆⭒˚.⋆ FOOTER ⋆⭒˚.⋆ -->
+  <footer>
+    <p>© Malena Gerez Diaz 2024</p>
+    <ul class="redes">
+      <li><a href="https://www.linkedin.com/in/malena-gerez-diaz" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/Malenagdiaz" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+      <li><a href="mailto:mgerezdiaz@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+  </footer>
 </body>
+<script src="./js/get.js"></script>
+<script src="./js/post.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/delete.js"></script>
+<script src="./js/put.js"></script>
 
 </html>

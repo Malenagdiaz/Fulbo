@@ -1,0 +1,15 @@
+.contenedor-de-carga {
+  display: flex;
+  justify-content: center;
+}
+
+#spinner {
+  width: 25%;
+  display: none;
+  @include mobile {
+    width: 70%;
+  }
+  @include tablet {
+    width: 60%;
+  }
+}
