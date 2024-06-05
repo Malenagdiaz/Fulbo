@@ -37,6 +37,7 @@ const abrirModal = (idJugador) => {
         res.json().then((data) => {
           obtenerJugadores(api);
           contenedorModal.innerHTML = "";
+          buscador.style.display = "block";
         })
       )
       .catch((error) => console.log(error));

@@ -9,6 +9,9 @@
   padding: 15px 20px;
   border-radius: 10px;
   z-index: 1000;
+  @include mobile {
+    width: 300px;
+  }
 }
 
 .cubierta-modal {
@@ -32,6 +35,9 @@
 #icon-alert {
   margin: auto 150px;
   width: 70px;
+  @include mobile {
+    margin: auto 100px;
+  }
 }
 
 .mensaje-advertencia {

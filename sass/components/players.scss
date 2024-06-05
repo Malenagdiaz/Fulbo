@@ -8,12 +8,19 @@
   display: flex;
   justify-content: center;
   margin: 0 35px;
+  @include mobile {
+    margin: auto;
+  }
 }
 
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .tarjeta {
@@ -29,6 +36,13 @@
   align-items: center;
   transition: transform 0.5s ease;
   padding: 10px 0px;
+
+  @include mobile {
+    width: 300px;
+  }
+  @include tablet {
+    width: calc(33.33% - 20px);
+  }
 }
 
 .tarjeta:hover {

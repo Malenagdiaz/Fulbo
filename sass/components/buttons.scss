@@ -1,5 +1,8 @@
 .boton-jugador {
   margin-right: 20px;
+  @include mobile {
+    margin-right: 10px;
+  }
 }
 
 button {
@@ -14,11 +17,27 @@ button span {
   font-size: 0.813rem;
   font-family: "Montserrat", sans-serif;
   color: $default-color;
+  @include tablet {
+    font-size: 1rem;
+  }
 }
 
 button img {
   margin-right: 2px;
   width: 20%;
+  @include mobile {
+    width: 40px;
+    margin-right: auto;
+  }
+}
+
+.agrega-jugador span {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    font-size: 0.875rem;
+  }
 }
 
 .agrega-jugador {
@@ -27,6 +46,13 @@ button img {
   border-radius: 20px;
   padding: 0 6px;
   box-shadow: 0 0 5px $blue-color, 0 0 25px $blue-color;
+  @include mobile {
+    border-radius: 50%;
+    padding: 5px;
+  }
+  @include tablet {
+    padding: 5px 15px;
+  }
 }
 
 .agrega-jugador:hover {
@@ -41,6 +67,9 @@ button img {
   border-radius: 15px;
   padding: 5px 9px;
   box-shadow: 0 0 5px $blue-color, 0 0 25px $blue-color;
+  @include tablet {
+    padding: 10px 15px;
+  }
 }
 
 .buscar-btn:hover,
@@ -150,6 +179,9 @@ ul li i {
   font-family: "Montserrat", sans-serif;
   padding: 0 10px;
   cursor: pointer;
+  @include mobile {
+    color: #1f3e71;
+  }
 }
 
 .boton-regresar i {
@@ -180,6 +212,9 @@ ul li i {
   display: flex;
   justify-content: center;
   gap: 35px;
+  @include mobile {
+    margin-top: auto;
+  }
 }
 
 #btn-borrar i,
@@ -284,6 +319,14 @@ ul li i {
 .btn-cancelarJ:hover {
   background-color: $blue-color;
   box-shadow: 0 0 5px $blue-color, 0 0 15px $blue-color, 0 0 25px $blue-color;
+}
+
+.btn-agregarJ,
+.btn-cancelarJ {
+  @include tablet {
+    padding: 15px 10px;
+    font-size: 1.25rem;
+  }
 }
 
 .btns-modal {

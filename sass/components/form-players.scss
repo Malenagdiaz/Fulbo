@@ -4,22 +4,36 @@
   flex-direction: column;
   gap: 12px;
   width: 550px;
-  height: 550px;
   margin-block: 15px;
   padding: 15px 20px;
   margin-block: 15px;
   border-radius: 15px;
+  @include mobile {
+    width: 350px;
+  }
+  @include tablet {
+    height: 65vh;
+    width: 90%;
+    gap: 22px;
+  }
 }
 
 label {
   color: $default-color;
   font-size: 0.938rem;
   font-family: "Montserrat", sans-serif;
+  @include tablet {
+    font-size: 1.5rem;
+  }
 }
 
 input {
   padding: 5px;
   font-family: "Montserrat", sans-serif;
+  @include tablet {
+    height: 45px;
+    padding: 7px;
+  }
 }
 
 textarea {
@@ -37,4 +51,8 @@ textarea {
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
+  @include tablet {
+    padding: 7px;
+    font-size: 2rem;
+  }
 }

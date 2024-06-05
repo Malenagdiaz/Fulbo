@@ -1,6 +1,9 @@
 header {
   width: 100%;
   background-color: $dark-blue-color;
+  @include mobile {
+    padding: 10px;
+  }
 }
 
 nav {
@@ -19,13 +22,23 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.125rem;
   margin-left: 10px;
+  @include mobile {
+    font-size: 2.5rem;
+  }
 }
 
 .icon {
   width: 10%;
+  @include mobile {
+    width: 20%;
+  }
 }
 
 #historia-futbol {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
+
+  @include mobile {
+    display: none;
+  }
 }

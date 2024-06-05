@@ -5,15 +5,27 @@
   border-radius: 10px;
   padding: 20px 15px;
   margin-block: 25px;
+  @include mobile {
+    width: 90%;
+  }
+  @include tablet {
+    width: 95%;
+  }
 }
 
 .info-jugador {
   display: flex;
   align-items: center;
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .detalles {
   width: 50%;
+  @include mobile {
+    width: auto;
+  }
 }
 
 .contenedor-imagen {
@@ -21,17 +33,28 @@
   align-items: center;
   width: 50%;
   justify-content: center;
+  @include mobile {
+    width: auto;
+  }
 }
 
 .imagen-jugador {
   object-fit: cover;
   width: 400px;
   height: 360px;
+  @include mobile {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
 }
 
 .tag-container {
   display: flex;
   flex-direction: column;
+  @include mobile {
+    align-items: center;
+  }
 }
 
 .nombre-jugador {
@@ -40,6 +63,9 @@
   color: $default-color;
   text-align: center;
   margin-bottom: 20px;
+  @include mobile {
+    margin-top: 20px;
+  }
 }
 
 #titulo-descripcion {
@@ -58,6 +84,9 @@
   display: flex;
   gap: 25px;
   margin-top: 25px;
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 #posicion,

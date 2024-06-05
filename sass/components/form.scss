@@ -4,6 +4,10 @@
   align-items: center;
   gap: 35px;
   margin-block: 25px;
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 select#club {
@@ -15,6 +19,10 @@ select#club {
   font-family: "Montserrat", sans-serif;
   width: 200px;
   border-radius: 5px;
+  @include tablet {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
 }
 
 select#club option {
@@ -31,6 +39,10 @@ select#position {
   font-family: "Montserrat", sans-serif;
   width: 200px;
   border-radius: 5px;
+  @include tablet {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
 }
 
 select#position option {

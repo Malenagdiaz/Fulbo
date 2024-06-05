@@ -30,6 +30,11 @@ header {
   width: 100%;
   background-color: #010b25;
 }
+@media (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+}
 
 nav {
   display: flex;
@@ -48,14 +53,29 @@ h1 {
   font-size: 3.125rem;
   margin-left: 10px;
 }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 .icon {
   width: 10%;
+}
+@media (max-width: 767px) {
+  .icon {
+    width: 20%;
+  }
 }
 
 #historia-futbol {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
+}
+@media (max-width: 767px) {
+  #historia-futbol {
+    display: none;
+  }
 }
 
 p {
@@ -66,6 +86,11 @@ p {
 
 .boton-jugador {
   margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .boton-jugador {
+    margin-right: 10px;
+  }
 }
 
 button {
@@ -81,10 +106,32 @@ button span {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
+@media (min-width: 768px) and (max-width: 1230px) {
+  button span {
+    font-size: 1rem;
+  }
+}
 
 button img {
   margin-right: 2px;
   width: 20%;
+}
+@media (max-width: 767px) {
+  button img {
+    width: 40px;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .agrega-jugador span {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  .agrega-jugador span {
+    font-size: 0.875rem;
+  }
 }
 
 .agrega-jugador {
@@ -93,6 +140,17 @@ button img {
   border-radius: 20px;
   padding: 0 6px;
   box-shadow: 0 0 5px #171a4a, 0 0 25px #171a4a;
+}
+@media (max-width: 767px) {
+  .agrega-jugador {
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  .agrega-jugador {
+    padding: 5px 15px;
+  }
 }
 
 .agrega-jugador:hover {
@@ -106,6 +164,12 @@ button img {
   border-radius: 15px;
   padding: 5px 9px;
   box-shadow: 0 0 5px #171a4a, 0 0 25px #171a4a;
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  .buscar-btn,
+  .limpiar-btn {
+    padding: 10px 15px;
+  }
 }
 
 .buscar-btn:hover,
@@ -214,6 +278,11 @@ ul li i {
   padding: 0 10px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .boton-regresar {
+    color: #1f3e71;
+  }
+}
 
 .boton-regresar i {
   margin-right: 5px;
@@ -243,6 +312,11 @@ ul li i {
   display: flex;
   justify-content: center;
   gap: 35px;
+}
+@media (max-width: 767px) {
+  .btn-editar-borrar {
+    margin-top: auto;
+  }
 }
 
 #btn-borrar i,
@@ -338,6 +412,14 @@ ul li i {
   box-shadow: 0 0 5px #171a4a, 0 0 15px #171a4a, 0 0 25px #171a4a;
 }
 
+@media (min-width: 768px) and (max-width: 1230px) {
+  .btn-agregarJ,
+  .btn-cancelarJ {
+    padding: 15px 10px;
+    font-size: 1.25rem;
+  }
+}
+
 .btns-modal {
   display: flex;
   justify-content: center;
@@ -358,6 +440,12 @@ ul li i {
   gap: 35px;
   margin-block: 25px;
 }
+@media (max-width: 767px) {
+  .club-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 select#club {
   background-color: #010b25;
@@ -368,6 +456,12 @@ select#club {
   font-family: "Montserrat", sans-serif;
   width: 200px;
   border-radius: 5px;
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  select#club {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
 }
 
 select#club option {
@@ -385,6 +479,12 @@ select#position {
   width: 200px;
   border-radius: 5px;
 }
+@media (min-width: 768px) and (max-width: 1230px) {
+  select#position {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+}
 
 select#position option {
   background-color: #010b25;
@@ -400,6 +500,16 @@ select#position option {
   width: 25%;
   display: none;
 }
+@media (max-width: 767px) {
+  #spinner {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  #spinner {
+    width: 60%;
+  }
+}
 
 #jugador-img {
   width: 90%;
@@ -412,11 +522,22 @@ select#position option {
   justify-content: center;
   margin: 0 35px;
 }
+@media (max-width: 767px) {
+  .contenedor-tarjetas {
+    margin: auto;
+  }
+}
 
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media (max-width: 767px) {
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .tarjeta {
@@ -432,6 +553,16 @@ select#position option {
   align-items: center;
   transition: transform 0.5s ease;
   padding: 10px 0px;
+}
+@media (max-width: 767px) {
+  .tarjeta {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  .tarjeta {
+    width: calc(33.33% - 20px);
+  }
 }
 
 .tarjeta:hover {
@@ -470,14 +601,34 @@ h2.titulo-adv {
   padding: 20px 15px;
   margin-block: 25px;
 }
+@media (max-width: 767px) {
+  .detalles-jugador {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  .detalles-jugador {
+    width: 95%;
+  }
+}
 
 .info-jugador {
   display: flex;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .info-jugador {
+    flex-direction: column;
+  }
+}
 
 .detalles {
   width: 50%;
+}
+@media (max-width: 767px) {
+  .detalles {
+    width: auto;
+  }
 }
 
 .contenedor-imagen {
@@ -486,16 +637,33 @@ h2.titulo-adv {
   width: 50%;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .contenedor-imagen {
+    width: auto;
+  }
+}
 
 .imagen-jugador {
   object-fit: cover;
   width: 400px;
   height: 360px;
 }
+@media (max-width: 767px) {
+  .imagen-jugador {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+  }
+}
 
 .tag-container {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767px) {
+  .tag-container {
+    align-items: center;
+  }
 }
 
 .nombre-jugador {
@@ -504,6 +672,11 @@ h2.titulo-adv {
   color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .nombre-jugador {
+    margin-top: 20px;
+  }
 }
 
 #titulo-descripcion {
@@ -523,6 +696,11 @@ h2.titulo-adv {
   gap: 25px;
   margin-top: 25px;
 }
+@media (max-width: 767px) {
+  .tags {
+    justify-content: center;
+  }
+}
 
 #posicion,
 #club {
@@ -538,11 +716,22 @@ h2.titulo-adv {
   flex-direction: column;
   gap: 12px;
   width: 550px;
-  height: 550px;
   margin-block: 15px;
   padding: 15px 20px;
   margin-block: 15px;
   border-radius: 15px;
+}
+@media (max-width: 767px) {
+  #formulario-jugador {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  #formulario-jugador {
+    height: 65vh;
+    width: 90%;
+    gap: 22px;
+  }
 }
 
 label {
@@ -550,10 +739,21 @@ label {
   font-size: 0.938rem;
   font-family: "Montserrat", sans-serif;
 }
+@media (min-width: 768px) and (max-width: 1230px) {
+  label {
+    font-size: 1.5rem;
+  }
+}
 
 input {
   padding: 5px;
   font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  input {
+    height: 45px;
+    padding: 7px;
+  }
 }
 
 textarea {
@@ -572,6 +772,13 @@ textarea {
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
 }
+@media (min-width: 768px) and (max-width: 1230px) {
+  #clubes,
+  #positions {
+    padding: 7px;
+    font-size: 2rem;
+  }
+}
 
 #modal {
   background-color: #010b25;
@@ -584,6 +791,11 @@ textarea {
   padding: 15px 20px;
   border-radius: 10px;
   z-index: 1000;
+}
+@media (max-width: 767px) {
+  #modal {
+    width: 300px;
+  }
 }
 
 .cubierta-modal {
@@ -608,6 +820,11 @@ textarea {
   margin: auto 150px;
   width: 70px;
 }
+@media (max-width: 767px) {
+  #icon-alert {
+    margin: auto 100px;
+  }
+}
 
 .mensaje-advertencia {
   margin-top: 20px;
@@ -619,6 +836,11 @@ textarea {
   justify-content: center;
   margin: 0 35px;
 }
+@media (max-width: 767px) {
+  .contenedor-edit {
+    margin: auto;
+  }
+}
 
 #editor {
   background-color: #010b25;
@@ -629,6 +851,16 @@ textarea {
   flex-direction: column;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  #editor {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1230px) {
+  #editor {
+    width: 95%;
+  }
 }
 
 .titulo-edit {
